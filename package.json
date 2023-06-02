@@ -1,0 +1,14 @@
+{
+  "name": "growtanic-api",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:cannihack-2023/growtanic-api.git",
+  "author": "cmcpoland <cmcpoland@blockdaemon.com>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "scripts": {
+    "start": "node index.js"
+  }
+}
