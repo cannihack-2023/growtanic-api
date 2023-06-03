@@ -9,15 +9,17 @@ services:
       - POSTGRES_PASSWORD=secret
     volumes:
       - pgdata:/var/lib/postgresql/data
-  growtanic-api:
-    build: .
-    command: npm start
-    volumes:
-      - .:/usr/app/
-      - /usr/app/node_modules
-    ports:
-      - "8080:8080"
-    depends_on:
-      - postgres
+  # growtanic-api:
+  #   build: .
+  #   command: npm start
+  #   volumes:
+  #     - .:/usr/app/
+  #     - /usr/app/node_modules
+  #   ports:
+  #     - "8080:8080"
+  #   networks:
+  #     - app
+  #   depends_on:
+  #     - postgres
 volumes:
   pgdata:
